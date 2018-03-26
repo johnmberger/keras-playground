@@ -24,17 +24,16 @@ def preprocess(sentence):
 # load ascii text and covert to lowercase
 filename = "shakespeare.txt"
 sentence = open(filename).read()
-#raw_text = raw_text.lower()
-#raw_text = nltk.sent_tokenize(raw_text)
+# raw_text = raw_text.lower()
+# raw_text = nltk.sent_tokenize(raw_text)
 
 sentence = preprocess(sentence)
 
-#print (sentence)
+print (sentence)
 
+# raw_text = sentence
 
-raw_text = sentence
-
-#print (raw_text)
+print (raw_text)
 
 # create mapping of unique chars to integers
 chars = sorted(list(set(raw_text)))
